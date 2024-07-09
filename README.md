@@ -34,50 +34,50 @@ Once the terminal connection is active, press ENTER to access the Main Menu.
 
 -- Configuration Menu --
 
-	Set Log le(V)el - There are seven options, with INFO being the default. Logs are displayed in real-time via the serial console, outside of the main menu.
+Set Log le(V)el - There are seven options, with INFO being the default. Logs are displayed in real-time via the serial console, outside of the main menu.
 
-	- Network Config -
+- Network Config -
 
-	Set (N)etwork Name - Enter the SSID of your WiFi access point. Axe Effect Beta currently supports Wireless (802.11n), single-band (2.4 GHz) connections.
+  Set (N)etwork Name - Enter the SSID of your WiFi access point. Axe Effect Beta currently supports Wireless (802.11n), single-band (2.4 GHz) connections.
 
-	Change WIFI (P)assword - Enter the authentication password for your wireless network. Axe Effect Beta currently supports WPA2 PSK and WPA3 PSK passwords.
+  Change WIFI (P)assword - Enter the authentication password for your wireless network. Axe Effect Beta currently supports WPA2 PSK and WPA3 PSK passwords.
 
-	Set (H)ostname - Set the NETBIOS Hostname of the device. The default is "AxeEffect".
+  Set (H)ostname - Set the NETBIOS Hostname of the device. The default is "AxeEffect".
 
-	(U)se DHCP - By default, Axe Effect will obtain an IP Address via DHCP. Pressing (U) will enable manual IP address configuration.
+  (U)se DHCP - By default, Axe Effect will obtain an IP Address via DHCP. Pressing (U) will enable manual IP address configuration.
 		(I)P Address - Enter your desired IP Address (AAA.BBB.CCC.DDD)
 		Net (M)ask - Enter your desired Netmask
 		(G)W IP Address - Enter your desired network gateway IP address
 
-	- SNMP Config -
+- SNMP Config -
 
-	Set (C)ommunity - Enter your SNMP v1/v2c community name. Default is "public". Axe Effect Beta currently supports SNMP v1 and SNMP v2c.
+  Set (C)ommunity - Enter your SNMP v1/v2c community name. Default is "public". Axe Effect Beta currently supports SNMP v1 and SNMP v2c.
 
-	Set System Con(T)act - Enter the SNMP system contact for Axe Effect. This field is readable via SNMP. Examples: name, email address, phone number
+  Set System Con(T)act - Enter the SNMP system contact for Axe Effect. This field is readable via SNMP. Examples: name, email address, phone number
 
-	Set System (L)ocation - Enter the location of Axe Effect. This field is readable via SNMP. Examples: Homelab Rack, Datacenter, Living Room
+  Set System (L)ocation - Enter the location of Axe Effect. This field is readable via SNMP. Examples: Homelab Rack, Datacenter, Living Room
 
-	Set System (D)escription - Enter the description of this device. This field is readable via SNMP.
+  Set System (D)escription - Enter the description of this device. This field is readable via SNMP.
 
 
 When you have finished configuring Axe Effect, there are three options at the bottom of the screen.
 
-	(W)rite config to flash - This writes the current configuration to Axe Effect, but does not reboot. Changes only take effect after the device is restarted.
+  (W)rite config to flash - This writes the current configuration to Axe Effect, but does not reboot. Changes only take effect after the device is restarted.
 
-	Write config and (R)eset device - This writes the current configuration to Axe Effect and reboots the device. Changes take effect immediately after rebooting.
+  Write config and (R)eset device - This writes the current configuration to Axe Effect and reboots the device. Changes take effect immediately after rebooting.
 
-	(Q)uit to main menu - Changes to the configuration are ignored, and your are returned to the main menu.
+  (Q)uit to main menu - Changes to the configuration are ignored, and your are returned to the main menu.
 
 
 -- Firmware Updates --
 
 Firmware updates will periodically be made available to patch bugs or add new features. To flash the firmware on Axe Effect:
 
-	1) Power down the device by removing the USB-micro cable
-	2) While holding the firmware flash button on the top case, connect Axe Effect to a PC via a MicroUSB cable.
-	3) Axe Effect will appear on your PC as a USB Flash device. Drag and Drop the new firmware file onto the drive (typically a *.uf2 file).
-	4) Once the file is transferred, Axe Effect will automatically reboot.
-	5) It is recommended to Factory Reset Axe Effect after updating the firmware, as memory address locations for specific functions may have changed, causing unintended behavior or instability.
+  1) Power down the device by removing the USB-micro cable
+  2) While holding the firmware flash button on the top case, connect Axe Effect to a PC via a MicroUSB cable.
+  3) Axe Effect will appear on your PC as a USB Flash device. Drag and Drop the new firmware file onto the drive (typically a *.uf2 file).
+  4) Once the file is transferred, Axe Effect will automatically reboot.
+  5) It is recommended to Factory Reset Axe Effect after updating the firmware, as memory address locations for specific functions may have changed, causing unintended behavior or instability.
 
 
 -- SNMP Information --
