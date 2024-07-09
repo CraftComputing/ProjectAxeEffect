@@ -3,6 +3,7 @@ Axe Effect is an SNMP-capable WiFi temperature (and humidity) sensor, designed s
 The device is designed to be simple to use, and provides accurate, real-time temperature and relative humidity data to the SNMP monitoring software of your choice.
 
 
+
 -- Hardware Setup --
 
 Configuration of Axe Effect is handled through a serial connection, via the device's USB-Micro port. Connect Axe Effect to a PC using a USB-Micro cable, and use a serial terminal of your choice.
@@ -32,11 +33,14 @@ Once the terminal connection is active, press ENTER to access the Main Menu.
 (Q)uit console - Exits the main menu. Log information is displayed with the menu is not active.
 
 
+
 -- Configuration Menu --
 
 Set Log le(V)el - There are seven options, with INFO being the default. Logs are displayed in real-time via the serial console, outside of the main menu.
 
-- Network Config -
+
+
+-- Network Config --
 
   Set (N)etwork Name - Enter the SSID of your WiFi access point. Axe Effect Beta currently supports Wireless (802.11n), single-band (2.4 GHz) connections.
 
@@ -48,6 +52,8 @@ Set Log le(V)el - There are seven options, with INFO being the default. Logs are
 		(I)P Address - Enter your desired IP Address (AAA.BBB.CCC.DDD)
 		Net (M)ask - Enter your desired Netmask
 		(G)W IP Address - Enter your desired network gateway IP address
+
+
 
 - SNMP Config -
 
@@ -69,6 +75,7 @@ When you have finished configuring Axe Effect, there are three options at the bo
   (Q)uit to main menu - Changes to the configuration are ignored, and your are returned to the main menu.
 
 
+
 -- Firmware Updates --
 
 Firmware updates will periodically be made available to patch bugs or add new features. To flash the firmware on Axe Effect:
@@ -78,6 +85,7 @@ Firmware updates will periodically be made available to patch bugs or add new fe
   3) Axe Effect will appear on your PC as a USB Flash device. Drag and Drop the new firmware file onto the drive (typically a *.uf2 file).
   4) Once the file is transferred, Axe Effect will automatically reboot.
   5) It is recommended to Factory Reset Axe Effect after updating the firmware, as memory address locations for specific functions may have changed, causing unintended behavior or instability.
+
 
 
 -- SNMP Information --
@@ -93,6 +101,7 @@ Over the coming weeks, we are planning on adding specific and detailed instructi
 In a future firmware update, we will be adding humidity sensor readouts in addition to temperature. The sensor will be at OID 1.3.6.1.2.1.99.1.1.2.4.0, and displays a 4-digit value representing relative humidity in hundredths of a percent. A value of 4052 would be a reading of 40.52% RH.
 
 This OID is NOT a standard component of the ENTITY-SENSOR-MIB, and may require custom configuration in your monitoring software to display. With the upcoming firmware release, we will also be publishing information around supporting SNMP monitoring software.
+
 
 
 -- Bug Reports --
