@@ -23,13 +23,9 @@ Once the terminal connection is active, press ENTER to access the Main Menu.
   (Q)uit console
 
 (I)nfo - Provides current running information about the device. This includes current sensor readout, current WiFi configuration and IP address, as well as SNMP and community information.
-
 (C)onfig - Device setup. General configuration options for Axe Effect.
-
 (F)actory Defaults - Reset Axe Effect configuration to factory defaults. This includes WiFi information, IP address, and SNMP community info.
-
 (R)eset device - Reboots Axe Effect. If configuration changes have been made previously without rebooting, changes will take effect after restart.
-
 (Q)uit console - Exits the main menu. Log information is displayed with the menu is not active.
 
 
@@ -43,11 +39,8 @@ Set Log le(V)el - There are seven options, with INFO being the default. Logs are
 -- Network Config --
 
   Set (N)etwork Name - Enter the SSID of your WiFi access point. Axe Effect Beta currently supports Wireless (802.11n), single-band (2.4 GHz) connections.
-
   Change WIFI (P)assword - Enter the authentication password for your wireless network. Axe Effect Beta currently supports WPA2 PSK and WPA3 PSK passwords.
-
   Set (H)ostname - Set the NETBIOS Hostname of the device. The default is "AxeEffect".
-
   (U)se DHCP - By default, Axe Effect will obtain an IP Address via DHCP. Pressing (U) will enable manual IP address configuration.
 		(I)P Address - Enter your desired IP Address (AAA.BBB.CCC.DDD)
 		Net (M)ask - Enter your desired Netmask
@@ -55,23 +48,18 @@ Set Log le(V)el - There are seven options, with INFO being the default. Logs are
 
 
 
-- SNMP Config -
+-- SNMP Config -
 
   Set (C)ommunity - Enter your SNMP v1/v2c community name. Default is "public". Axe Effect Beta currently supports SNMP v1 and SNMP v2c.
-
   Set System Con(T)act - Enter the SNMP system contact for Axe Effect. This field is readable via SNMP. Examples: name, email address, phone number
-
   Set System (L)ocation - Enter the location of Axe Effect. This field is readable via SNMP. Examples: Homelab Rack, Datacenter, Living Room
-
   Set System (D)escription - Enter the description of this device. This field is readable via SNMP.
 
 
 When you have finished configuring Axe Effect, there are three options at the bottom of the screen.
 
   (W)rite config to flash - This writes the current configuration to Axe Effect, but does not reboot. Changes only take effect after the device is restarted.
-
   Write config and (R)eset device - This writes the current configuration to Axe Effect and reboots the device. Changes take effect immediately after rebooting.
-
   (Q)uit to main menu - Changes to the configuration are ignored, and your are returned to the main menu.
 
 
