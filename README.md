@@ -91,7 +91,7 @@ To flash the firmware on Axe Effect:
 
 For temperature data, Axe Effect is using the standard [ENTITY-SENSOR-MIB](https://www.circitor.fr/Mibs/Html/E/ENTITY-SENSOR-MIB.php). It is available by default in most SNMP monitoring software, or can  be added by downloading the `.mib` file from the link.
 
-Temperature is reported via the entPhySensorValue field, using OID `1.3.6.1.2.1.99.1.1.1.4`. Data is reported as a 4-digit value, representing hundredths of a ºC. For example, `2304` would be read as `23.04`ºC.
+Temperature is reported via the entPhySensorValue field, using OID `1.3.6.1.2.1.99.1.1.1.4.0`. Data is reported as a 4-digit value, representing hundredths of a ºC. For example, `2304` would be read as `23.04`ºC.
 
 The ENTITY-SENSOR-MIB contains display configuration, that should be read by most SNMP monitoring software to properly display the temperature. Some software may only read the raw value, and may require adding a custom divisor to the value (val/100). PRTG, for example, displays the raw data without additional configuration. Observium by default will show the properly formatted value.
 
